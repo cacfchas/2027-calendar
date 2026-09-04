@@ -1,0 +1,471 @@
+[
+  {
+    "name": "Winter Reset '26",
+    "category": "Office Closed",
+    "startDate": "2026-12-21",
+    "endDate": "2027-01-03",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Teacher Workday (No School)",
+    "category": "School Closed/Office Open",
+    "startDate": "2027-01-04",
+    "endDate": "2027-01-04",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - January",
+    "category": "Communications",
+    "startDate": "2027-01-12",
+    "endDate": "2027-01-12",
+    "status": "Confirmed"
+  },
+  {
+    "name": "MLK Jr Day",
+    "category": "Office Closed",
+    "startDate": "2027-01-18",
+    "endDate": "2027-01-18",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q1 Fundholder Newsletter",
+    "category": "Communications",
+    "startDate": "2027-01-25",
+    "endDate": "2027-01-25",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - January",
+    "category": "Communications",
+    "startDate": "2027-01-29",
+    "endDate": "2027-01-29",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Professional Learning Day (No School)",
+    "category": "School Closed/Office Open",
+    "startDate": "2027-02-03",
+    "endDate": "2027-02-03",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Deep Work Week",
+    "category": "Deep Work Weeks",
+    "startDate": "2027-02-08",
+    "endDate": "2027-02-12",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - February",
+    "category": "Communications",
+    "startDate": "2027-02-16",
+    "endDate": "2027-02-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q4 ('26) Statements",
+    "category": "Grants & Programs",
+    "startDate": "2027-02-16",
+    "endDate": "2027-02-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "EC",
+    "category": "Committee Meeting",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-25",
+    "status": "Confirmed"
+  },
+  {
+    "name": "FinAud Meeting",
+    "category": "Committee Meeting",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-25",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - February",
+    "category": "Communications",
+    "startDate": "2027-02-26",
+    "endDate": "2027-02-26",
+    "status": "Confirmed"
+  },
+  {
+    "name": "FinAud Retreat",
+    "category": "Committee Meeting",
+    "startDate": "2027-03-02",
+    "endDate": "2027-03-02",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Mental Wellness Day (No School)",
+    "category": "School Closed/Office Open",
+    "startDate": "2027-03-05",
+    "endDate": "2027-03-05",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - March",
+    "category": "Communications",
+    "startDate": "2027-03-16",
+    "endDate": "2027-03-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Gov Board Retreat",
+    "category": "Board Meeting",
+    "startDate": "2027-03-23",
+    "endDate": "2027-03-24",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - March",
+    "category": "Communications",
+    "startDate": "2027-03-31",
+    "endDate": "2027-03-31",
+    "status": "Confirmed"
+  },
+  {
+    "name": "EC",
+    "category": "Committee Meeting",
+    "startDate": "2027-04-01",
+    "endDate": "2027-04-01",
+    "status": "Confirmed"
+  },
+  {
+    "name": "FinAud Meeting",
+    "category": "Committee Meeting",
+    "startDate": "2027-04-01",
+    "endDate": "2027-04-01",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Grants Launch",
+    "category": "Grants & Programs",
+    "startDate": "2027-04-01",
+    "endDate": "2027-04-01",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Spring Break Week",
+    "category": "School Closed/Office Open",
+    "startDate": "2027-04-05",
+    "endDate": "2027-04-09",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - April",
+    "category": "Communications",
+    "startDate": "2027-04-13",
+    "endDate": "2027-04-13",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Gov Board",
+    "category": "Board Meeting",
+    "startDate": "2027-04-22",
+    "endDate": "2027-04-22",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q2 Fundholder Newsletter",
+    "category": "Communications",
+    "startDate": "2027-04-26",
+    "endDate": "2027-04-26",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - April",
+    "category": "Communications",
+    "startDate": "2027-04-30",
+    "endDate": "2027-04-30",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - May",
+    "category": "Communications",
+    "startDate": "2027-05-11",
+    "endDate": "2027-05-11",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Deep Work Week",
+    "category": "Deep Work Weeks",
+    "startDate": "2027-05-17",
+    "endDate": "2027-05-21",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q1 Statements",
+    "category": "Grants & Programs",
+    "startDate": "2027-05-18",
+    "endDate": "2027-05-18",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - May",
+    "category": "Communications",
+    "startDate": "2027-05-28",
+    "endDate": "2027-05-28",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Memorial Day",
+    "category": "Office Closed",
+    "startDate": "2027-05-31",
+    "endDate": "2027-05-31",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - June",
+    "category": "Communications",
+    "startDate": "2027-06-15",
+    "endDate": "2027-06-15",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Juneteenth (Obs)",
+    "category": "Office Closed",
+    "startDate": "2027-06-18",
+    "endDate": "2027-06-18",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - June",
+    "category": "Communications",
+    "startDate": "2027-06-30",
+    "endDate": "2027-06-30",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Grants Launch",
+    "category": "Grants & Programs",
+    "startDate": "2027-07-01",
+    "endDate": "2027-07-01",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Independence Day (Obs)",
+    "category": "Office Closed",
+    "startDate": "2027-07-05",
+    "endDate": "2027-07-05",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - July",
+    "category": "Communications",
+    "startDate": "2027-07-13",
+    "endDate": "2027-07-13",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q3 Fundholder Newsletter",
+    "category": "Communications",
+    "startDate": "2027-07-26",
+    "endDate": "2027-07-26",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - July",
+    "category": "Communications",
+    "startDate": "2027-07-30",
+    "endDate": "2027-07-30",
+    "status": "Confirmed"
+  },
+  {
+    "name": "EC",
+    "category": "Committee Meeting",
+    "startDate": "2027-08-05",
+    "endDate": "2027-08-05",
+    "status": "Confirmed"
+  },
+  {
+    "name": "FinAud Meeting",
+    "category": "Committee Meeting",
+    "startDate": "2027-08-05",
+    "endDate": "2027-08-05",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - August",
+    "category": "Communications",
+    "startDate": "2027-08-17",
+    "endDate": "2027-08-17",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q2 Statements",
+    "category": "Grants & Programs",
+    "startDate": "2027-08-17",
+    "endDate": "2027-08-17",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Gov Board",
+    "category": "Board Meeting",
+    "startDate": "2027-08-26",
+    "endDate": "2027-08-26",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - August",
+    "category": "Communications",
+    "startDate": "2027-08-31",
+    "endDate": "2027-08-31",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Grants Launch",
+    "category": "Grants & Programs",
+    "startDate": "2027-09-01",
+    "endDate": "2027-09-01",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Labor Day",
+    "category": "Office Closed",
+    "startDate": "2027-09-06",
+    "endDate": "2027-09-06",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - September",
+    "category": "Communications",
+    "startDate": "2027-09-14",
+    "endDate": "2027-09-14",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - September",
+    "category": "Communications",
+    "startDate": "2027-09-30",
+    "endDate": "2027-09-30",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - October",
+    "category": "Communications",
+    "startDate": "2027-10-12",
+    "endDate": "2027-10-12",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Deep Work Week",
+    "category": "Deep Work Weeks",
+    "startDate": "2027-10-25",
+    "endDate": "2027-10-29",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q4 Fundholder Newsletter",
+    "category": "Communications",
+    "startDate": "2027-10-25",
+    "endDate": "2027-10-25",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - October",
+    "category": "Communications",
+    "startDate": "2027-10-29",
+    "endDate": "2027-10-29",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Election Day",
+    "category": "Office Closed",
+    "startDate": "2027-11-02",
+    "endDate": "2027-11-02",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Year End Solicitation",
+    "category": "Strategic Growth",
+    "startDate": "2027-11-15",
+    "endDate": "2027-11-15",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - November",
+    "category": "Communications",
+    "startDate": "2027-11-16",
+    "endDate": "2027-11-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Q3 Statements",
+    "category": "Grants & Programs",
+    "startDate": "2027-11-16",
+    "endDate": "2027-11-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "EC",
+    "category": "Committee Meeting",
+    "startDate": "2027-11-18",
+    "endDate": "2027-11-18",
+    "status": "Confirmed"
+  },
+  {
+    "name": "FinAud Meeting",
+    "category": "Committee Meeting",
+    "startDate": "2027-11-18",
+    "endDate": "2027-11-18",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Thanksgiving Break",
+    "category": "Office Closed",
+    "startDate": "2027-11-24",
+    "endDate": "2027-11-26",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - November",
+    "category": "Communications",
+    "startDate": "2027-11-30",
+    "endDate": "2027-11-30",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Gov Board",
+    "category": "Board Meeting",
+    "startDate": "2027-12-09",
+    "endDate": "2027-12-09",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Donor Check Cut-Off",
+    "category": "Grants & Programs",
+    "startDate": "2027-12-10",
+    "endDate": "2027-12-10",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Nonprofit News - December",
+    "category": "Communications",
+    "startDate": "2027-12-14",
+    "endDate": "2027-12-14",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Final Check Run",
+    "category": "Grants & Programs",
+    "startDate": "2027-12-16",
+    "endDate": "2027-12-16",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Winter Reset '27",
+    "category": "Office Closed",
+    "startDate": "2027-12-20",
+    "endDate": "2028-01-02",
+    "status": "Confirmed"
+  },
+  {
+    "name": "Monthly Flash Report - December '26",
+    "category": "Communications",
+    "startDate": "2028-01-02",
+    "endDate": "2028-01-02",
+    "status": "Confirmed"
+  }
+]
