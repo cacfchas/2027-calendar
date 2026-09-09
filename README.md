@@ -35,10 +35,20 @@ does not currently have one.
 
 ## Categories
 
-Preset colors live in `calendar-app/src/constants.js`. Any category in the sheet
-that is not preset still renders, with an auto-assigned color from
-`CategoryContext.jsx`. Note that every preset category shows a filter pill even
-with zero events, so keep `CATEGORIES` aligned with what the sheet actually uses.
+**The sheet is the only source of which categories exist.** `buildCategoryMap` in
+`calendar-app/src/CategoryContext.jsx` derives them from the loaded events, so a
+category appears if and only if at least one dated event carries it. Add a
+category to the sheet and it shows up with no code change. Stop using one and it
+disappears.
+
+`CATEGORY_COLORS` in `calendar-app/src/constants.js` is a color lookup, not a
+category list. A name listed there never creates a filter pill on its own; a name
+missing from there still renders, with a color from `DYNAMIC_PALETTE`. Add an
+entry only to pin a category to a specific color.
+
+Category names are sorted, so filter order and fallback colors stay stable when
+sheet rows are added or reordered. One thing to watch: a dated event with a blank
+Category is filtered out and shows nowhere.
 
 ## Rolling over to a new year
 

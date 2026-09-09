@@ -1,15 +1,16 @@
 import { createContext, useContext } from 'react';
-import { CATEGORIES } from './constants';
+import { CATEGORY_COLORS } from './constants';
 
-export const CategoryContext = createContext(CATEGORIES);
+// Empty until events load, because the sheet decides which categories exist.
+export const CategoryContext = createContext({});
 
 export function useCategories() {
   return useContext(CategoryContext);
 }
 
 /**
- * Palette of colors for dynamically generated categories.
- * These are visually distinct and avoid clashing with existing category colors.
+ * Colors for categories with no entry in CATEGORY_COLORS.
+ * These are visually distinct and avoid clashing with the preset colors.
  */
 const DYNAMIC_PALETTE = [
   { color: '#E91E63', textColor: '#fff' },  // Pink
@@ -30,18 +31,28 @@ const DYNAMIC_PALETTE = [
 ];
 
 /**
- * Build a category map from events.
- * Known categories keep their preset colors.
- * New categories get auto-assigned colors from the palette.
+ * Build the category map from the loaded events.
+ *
+ * The sheet is the only source of which categories exist: a category appears
+ * here if and only if at least one loaded event carries it. Nothing is seeded
+ * from CATEGORY_COLORS, so a category the sheet has stopped using disappears,
+ * and one the sheet adds shows up with no code change.
+ *
+ * Names are sorted before colors are assigned, so both the filter order and a
+ * category's fallback color depend only on which categories are present, not
+ * on the order the sheet happens to list its rows.
  */
 export function buildCategoryMap(events) {
-  const categories = { ...CATEGORIES };
+  const names = [...new Set(events.map((ev) => ev.category).filter(Boolean))].sort();
+
+  const categories = {};
   let paletteIndex = 0;
 
-  for (const ev of events) {
-    const cat = ev.category;
-    if (cat && !categories[cat]) {
-      categories[cat] = DYNAMIC_PALETTE[paletteIndex % DYNAMIC_PALETTE.length];
+  for (const name of names) {
+    if (CATEGORY_COLORS[name]) {
+      categories[name] = CATEGORY_COLORS[name];
+    } else {
+      categories[name] = DYNAMIC_PALETTE[paletteIndex % DYNAMIC_PALETTE.length];
       paletteIndex++;
     }
   }
