@@ -19,8 +19,24 @@ fetch fails, the app falls back to the snapshot in
 
 Expected sheet columns in row 1: `Event Name`, `Category`, `Start Date`,
 `End Date`. Extra columns are ignored. **Rows with a blank Start Date are
-skipped** — that is how TBD items stay in the sheet without cluttering the
+skipped**, which is how TBD items stay in the sheet without cluttering the
 calendar.
+
+### Auto-refresh
+
+`refreshMinutes` in `calendar-app/src/config.js` controls the poll interval
+(currently 5 minutes). Nothing is cached across the poll, so renamed events,
+new rows, changed dates and changed categories all appear on their own. Set it
+to `0` to load once per page open instead.
+
+Category changes reconcile without disturbing the person looking at the page: a
+category the sheet adds arrives switched on, one it stops using disappears, and
+any filter the viewer has switched off stays off. See the `knownCategories`
+reconcile in `calendar-app/src/App.jsx`.
+
+The one piece that does NOT update itself is the fallback snapshot,
+`calendar-app/public/events.json`. It is a build artifact and only gets used
+when the sheet fetch fails, so it needs a commit to refresh.
 
 ## Password
 
@@ -30,8 +46,7 @@ The login gate reads from a tab named exactly `Params`:
 | --- | --- |
 | `password` | your-password |
 
-**With no `Params` tab, the calendar opens with no login at all.** The 2027 sheet
-does not currently have one.
+**With no `Params` tab, the calendar opens with no login at all.**
 
 ## Categories
 

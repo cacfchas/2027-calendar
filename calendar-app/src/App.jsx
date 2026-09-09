@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { MONTH_NAMES, YEAR } from './constants';
 import { isMonthLevel, formatDateRange, parseDate, eventOverlapsMonth } from './utils';
 import { loadEvents, loadPassword } from './sheetLoader';
@@ -15,6 +15,10 @@ import LoginPage from './components/LoginPage';
 import './App.css';
 
 const SESSION_KEY = 'cacf_authenticated';
+
+// Separator for joining category names into a comparable key. Not a legal
+// character in a sheet cell, so it cannot collide with a category name.
+const NAME_SEP = '\u0000';
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -33,15 +37,32 @@ function App() {
   const [passwordLoaded, setPasswordLoaded] = useState(false);
   const [loginError, setLoginError] = useState('');
 
-  // Dynamic categories built from loaded events
+  // Categories are derived from the sheet on every refresh.
   const categories = useMemo(() => buildCategoryMap(events), [events]);
+
+  // Identity of `categories` changes on every poll because loadEvents returns a
+  // fresh array, so reconcile against the category NAMES instead. A refresh that
+  // returns the same categories then leaves the user's filters alone.
+  const categoryKey = useMemo(() => Object.keys(categories).join(NAME_SEP), [categories]);
 
   const [activeCategories, setActiveCategories] = useState(() => new Set());
 
-  // When categories change (events loaded), activate all categories
+  // Category names as of the last reconcile, to tell "added by the sheet" apart
+  // from "switched off by the user."
+  const knownCategories = useRef(new Set());
+
   useEffect(() => {
-    setActiveCategories(new Set(Object.keys(categories)));
-  }, [categories]);
+    const names = categoryKey ? categoryKey.split(NAME_SEP) : [];
+    setActiveCategories((prev) => {
+      // Switch on anything the sheet just added, keep everything else as the
+      // user left it, and drop names the sheet no longer uses.
+      const next = new Set(
+        names.filter((name) => !knownCategories.current.has(name) || prev.has(name))
+      );
+      knownCategories.current = new Set(names);
+      return next;
+    });
+  }, [categoryKey]);
 
   // Load password on mount
   useEffect(() => {
